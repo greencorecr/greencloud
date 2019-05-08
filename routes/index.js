@@ -354,7 +354,7 @@ module.exports = function(app, io) {
 							'content': dnsData.content,
 							'proxiable': arrayDNS[i].proxiable,
 							'proxied': arrayDNS[i].proxied,
-							'ttl': dnsData.ttl,
+							'ttl': parseInt(dnsData.ttl),
 							'locked': arrayDNS[i].locked,
 							'zone_id': arrayDNS[i].zone_id,
 							'zone_name': arrayDNS[i].zone_name,
